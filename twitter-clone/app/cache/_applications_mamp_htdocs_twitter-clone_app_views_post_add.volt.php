@@ -1,4 +1,4 @@
-<h1>Unesi novi post!</h1>
+<h1>Unesi novi postic!</h1>
 
 <?php if (isset($errors)) { ?>
     <?php foreach ($errors as $error) { ?>

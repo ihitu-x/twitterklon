@@ -4,14 +4,15 @@ use Phalcon\Validation;
 use Phalcon\Validation\Validator\Email;
 use Phalcon\Validation\Validator\PresenceOf;
 use Phalcon\Validation\Validator\StringLength as StringLength;
+use Phalcon\Paginator\Adapter\Model as PaginatorModel;
 
 class PostController extends \Phalcon\Mvc\Controller
 {
 
     public function indexAction()
     {
-      $this->view->postovi = Postovi::find();
-    /*  $currentPage = (int) $_GET["page"];
+    //  $this->view->postovi = Postovi::find();
+      $currentPage = (int) $_GET["page"];
 
       // The data set to paginate
       $postovi      = Postovi::find();
@@ -27,7 +28,7 @@ class PostController extends \Phalcon\Mvc\Controller
 
       // Get the paginated results
       $page = $paginator->getPaginate();
-      $this->view->setVar("page", $page);*/
+      $this->view->setVar("page", $page);
     }
 
 
